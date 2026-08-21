@@ -1,0 +1,10 @@
+{
+  "permission": {
+    "executeCode": {
+      "*": "allow"
+    },
+    "webfetch": {
+      "https://platform.claude.com/*": "allow"
+    }
+  }
+}
