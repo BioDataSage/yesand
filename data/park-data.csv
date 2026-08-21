@@ -1,0 +1,26 @@
+Area Name,Area ID,Park Name,Park ID,Date,Start Time,End Time,"Total Time (in minutes, if available)",Park Conditions,Other Animal Sightings,Litter,Temperature & Weather,Number of Squirrels,Squirrel Sighter(s),Number of Sighters
+UPPER MANHATTAN,A,Fort Tryon Park,1,3/1/20,3:14:00 PM,4:05:00 PM,51,Busy,"Humans, Dogs, Pigeons, Cardinals",Some,"43 degrees, sunny",12,"01, 02, 03, 04",4
+UPPER MANHATTAN,A,J. Hood Wright Park,2,3/1/20,3:30:00 PM,4:00:00 PM,30,Calm,"Humans, Hawks, Dogs, Pigeons, Rat","Some, in trees","cold, clear",24,"05, 06",2
+UPPER MANHATTAN,A,Highbridge Park,3,3/1/20,3:21:00 PM,4:15:00 PM,54,"Calm, pick-up baseball game","Humans, Dogs (3, all on leashes), Downy Woodpecker (2), Robins, Song Birds","Some, especially caught in wooded area in East, balloons in trees",43 degrees,16,"07, 08, 09",3
+UPPER MANHATTAN,A,St. Nicholas Park,4,3/1/20,3:15:00 PM,3:45:00 PM,30,Calm,"Humans, Dogs","Some, backside of park","43 degrees, clear",15,"10, 11, 12",3
+UPPER MANHATTAN,A,Riverside Park (section near Grant Memorial),5,3/1/20,3:15:00 PM,3:45:00 PM,30,Calm,"Humans, Dogs",,,28,"13, 14, 15",3
+UPPER MANHATTAN,A,Marcus Garvey Park,6,3/1/20,3:45:00 PM,4:15:00 PM,30,"Calm, re: humans, but a hawk is certainly not a calming presence","Hawks, Dogs, Pigeons",Abundant,"42 degrees, clear",34,16,1
+CENTRAL MANHATTAN,B,Madison Square Park,7,3/1/20,2:30:00 PM,3:50:00 PM,80,Busy,"Humans, Dogs, Pigeons",,"43 degrees, sunny",11,"17, 18, 19, 20",4
+CENTRAL MANHATTAN,B,Union Square Park,8,3/1/20,3:15:00 PM,3:45:00 PM,30,Busy,"Humans, Dogs, Pigeons",,"40 degrees, sunny",16,"21, 22, 23, 24",4
+CENTRAL MANHATTAN,B,Stuyvesant Square Park,9,3/1/20,3:00:00 PM,4:00:00 PM,60,"Calm, 20Š—–30 ppl on each side","Humans, Dogs, Sparrows",Some,"45 degrees, sunny",25,"25, 26",2
+CENTRAL MANHATTAN,B,Washington Square Park,10,3/1/20,3:20:00 PM,4:00:00 PM,40,Busy,"Humans, Dogs",None,"45 degrees, sunny with shade spots",51,"27, 28",2
+CENTRAL MANHATTAN,B,Tompkins Square Park,11,3/1/20,3:15:00 PM,3:45:00 PM,30,,,,,59,"29, 30",2
+CENTRAL MANHATTAN,B,John V. Lindsay East River Park,12,3/1/20,3:01:00 PM,3:45:00 PM,44,Calm,"Humans (Joggers, Bikers), Dogs",,"windy, clear",12,31,1
+LOWER MANHATTAN,C,Sara D. Roosevelt Park (Section Above Delancey St),13.1,3/1/20,3:30:00 PM,4:00:00 PM,30,Busy,"Humans, Dogs (Gray)",Some,"44 degrees, sunny",0,"32, 33, 34",3
+LOWER MANHATTAN,C,Sara D. Roosevelt Park (Section Below Delancey St),13.2,3/1/20,3:30:00 PM,4:00:00 PM,30,Busy,"Humans, Pigeons",Some,"43 degrees, sunny",0,"35, 36, 37",3
+LOWER MANHATTAN,C,Seward Park,14,3/1/20,3:25:00 PM,3:55:00 PM,30,Busy,"Humans, Pigeons",Some,"40 degrees, sunny",7,"38, 39, 40, 41",4
+LOWER MANHATTAN,C,Corlears Hook Park,15,3/1/20,3:35:00 PM,4:15:00 PM,40,Calm,"Humans, Dogs, Pigeons","Some, mostly in trees","48 degrees, sunny",16,"42, 43, 44",3
+LOWER MANHATTAN,C,Columbus Park,16,3/1/20,3:47:00 PM,4:38:00 PM,51,Busy,"Humans, Dogs, Pigeons",None,"42 degrees, windy, dry, clear",4,"45, 46",2
+LOWER MANHATTAN,C,Thomas Paine Park,17,3/1/20,3:35:00 PM,3:45:00 PM,10,Calm,"Humans, Dogs, Pigeons",None,"42 degrees, windy, dry, clear",0,"45, 46",2
+LOWER MANHATTAN,C,Teardrop Park,18,3/1/20,3:37:00 PM,4:00:00 PM,23,,"Humans, Dogs, Fish in Pond, Geese, Half-eaten Dead Rat",Some,"43 degrees, sunny, with 20-30 mph gusts",1,"47, 48",2
+LOWER MANHATTAN,C,City Hall Park,19,3/1/20,3:34:00 PM,4:04:00 PM,30,Calm,"Humans, Pigeons, Cat",None,"44 degrees, sunny",18,"49, 50",2
+LOWER MANHATTAN,C,Battery Park,20,3/1/20,3:10:00 PM,3:40:00 PM,30,"""Cool"" - Hank","Humans, Dogs, Pigeons",Some,"40-ish degrees, but sunny!",26,"51, 52, 53, 54, 55",5
+BROOKLYN,D,Msgr. McGolrick Park,21,3/1/20,3:25:00 PM,3:50:00 PM,25,Medium,"Humans, Dogs, Pigeons",Some,"chilly, sunny",14,"56, 57, 58, 59, 60, 61",6
+BROOKLYN,D,McCarren Park,22,3/1/20,3:15:00 PM,3:45:00 PM,30,Busy,"Humans, Dogs",Some,43 degrees,44,"62, 63, 64, 65, 66, 67",6
+BROOKLYN,D,Cooper Park,23,3/1/20,3:06:00 PM,3:50:00 PM,44,Calm,"Humans, Dogs, Pigeons, Blackbird, Starling, Robins, Doves",Some,"45 degrees, sunny, NW wind",0,"68, 69, 70, 71",4
+BROOKLYN,D,Sternberg Park,24,3/1/20,3:00:00 PM,3:35:00 PM,35,Calm,"Humans, Pigeons",,"36 degrees, cold, windy",0,72,1
