@@ -32,7 +32,7 @@ jobs:
 
       - uses: anthropics/claude-code-action@v1
         with:
-          api_key: ${{ secrets.API_KEY }}
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           prompt: >
             /analytics-metrics
             Evaluate the dataset at ${{ github.event.inputs.dataset_path || 'the changed CSV files in this PR' }}.
