@@ -4,6 +4,7 @@ Use this repository as a template for R data-analysis projects that uses skills.
 
 ## Start a project from this template
 
+1. Select **Use this template** on GitHub, then name your new repository.
 2. Add your data and analysis code to the project.
 3. Keep the `.posit/assistant/skills/` folder in the repository so the project’s instructions travel with it.
 4. Open the project in Posit/RStudio and ask the assistant to use the skill that fits your task.
