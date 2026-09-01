@@ -1,6 +1,6 @@
 ---
 name: quarto-report-generation
-description: Generates concise, accessible HTML reports from data analysis using Quarto. Combines analytics-metrics, planning-data-visualizations, and accessible-visualization skills to create ADA-compliant reports with intentional narratives, code details in collapsible sections, and accessible color palettes. Use when creating a final data analysis report with specific story and findings.
+description: Generates concise, accessible HTML reports from data analysis using Quarto, while making the user a genuine partner in the reasoning — not just an approver of decisions already made. Combines analytics-metrics, planning-data-visualizations, and accessible-visualization skills to create ADA-compliant reports with intentional narratives, code details in collapsible sections, and accessible color palettes. Use when creating a final data analysis report with specific story and findings, especially when the user is learning the analysis (not just receiving it).
 license: MIT
 metadata:
   author: local
@@ -20,6 +20,7 @@ Reports from this skill follow these principles:
 - **Code transparency**: Show working code in collapsible `<details>` sections so readers can verify logic without clutter.
 - **Accessible**: Use semantic HTML, sufficient color contrast (WCAG AA), alt text for all images, and clear hierarchies.
 - **Self-contained**: All data, code, and visualizations are included; the report needs no external dependencies.
+- **User-led**: At each checkpoint, present the situation and open question, then follow the user's direction. The user's decisions guide the report.
 
 ## Workflow
 
@@ -28,7 +29,7 @@ Reports from this skill follow these principles:
 Use short, decision-focused prompt pauses throughout the workflow. Make the user a partner in choices that affect the question, method, story, or final interpretation.
 
 - Batch related decisions into one `AskUser` call.
-- Present a recommended default and one or two meaningful alternatives.
+- Present the situation and the open question. Do not push back on or evaluate the user's answers — follow their direction.
 - Treat an instruction already supplied by the user as confirmed. Do not ask again.
 - Record each confirmed choice so it can appear in the report's methodology or notes.
 - Do not move past a checkpoint until the user has selected, revised, or explicitly delegated the decision.
@@ -53,21 +54,20 @@ From your metrics calculations, extract:
 
 Write these as bullet points in plain language.
 
-### Step 1b: Confirm calculations and mathematical decisions with the user
+### Step 1b: Confirm calculations with the user
 
-Before proceeding to visualization or report writing, surface every calculation and mathematical decision made during analytics-metrics to the user for explicit confirmation. Use `AskUser` to present each decision as a structured question.
+Before proceeding to visualization or report writing, use `AskUser` to walk the user through the specific calculations made during analytics-metrics. Tailor these confirmations to what the data actually contains — name the real columns, values, and filters used, not generic placeholders.
 
-For each calculation or decision, confirm:
-- **What was computed**: The formula or aggregation used (e.g., "median acquisition lag = median of `year_acquired - year_created`")
-- **Why that method**: The reasoning behind the choice (e.g., "used median instead of mean to reduce influence of outliers")
-- **Exclusions or filters applied**: Any rows dropped, NA values removed, or subsets selected, and the rationale
-- **Denominators and scope**: What the denominator is in any ratio or percentage, and what population it represents
+For each calculation, present:
+- **What was computed**: The exact formula or aggregation applied to the actual columns (e.g., "counted unique squirrel sightings per park using `park_name`")
+- **Exclusions or filters applied**: Any rows dropped, NA values removed, or subsets used, named specifically (e.g., "excluded 12 rows where `hectares` was NA")
+- **Denominators and scope**: What population the metric covers, using the actual field names and values from the data
 
-Group related decisions into as few `AskUser` calls as possible (batch them when they are logically connected). Present the decisions as a summary table or bullet list in the question text so the user can scan them quickly.
+Group related decisions into as few `AskUser` calls as possible. Present prior decisions as a summary table or bullet list so the user can scan what's settled.
 
-**Only proceed to Step 2 after the user has confirmed or corrected each calculation.** If the user corrects a decision, update the metric accordingly before moving on.
+**Only proceed to Step 2 after the user has confirmed (or corrected) each calculation.** If the user corrects a decision, update the metric accordingly before moving on. Do not argue with corrections — follow the user's direction.
 
-Log each confirmed decision for inclusion in the report (see Step 4 below).
+Log each confirmed decision for the report (Step 4).
 
 ### Step 2: Plan visualizations with planning-data-visualizations
 
@@ -79,7 +79,7 @@ For each key finding:
 
 ### Step 2b: Confirm the story and visualization plan with the user
 
-Before building final charts, use `AskUser` to present the proposed findings in a compact table or list. For each finding, show:
+Use `AskUser` to present the proposed findings in a compact table or list. For each finding, show:
 
 - **Conclusion**: The takeaway title
 - **Evidence**: The metric and comparison that support it
@@ -96,7 +96,7 @@ Use direct labels instead of legends when possible.
 
 ### Step 3b: Pause for evidence review
 
-After producing draft visuals, show the user the proposed conclusion, chart preview, and caveat together. Use `AskUser` to confirm that:
+After producing draft visuals, use `AskUser` to confirm that:
 
 - The title says what the evidence supports
 - The visual makes the intended comparison easy to see
