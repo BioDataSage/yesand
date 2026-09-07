@@ -22,6 +22,8 @@ The skill instructions live in [`.posit/assistant/skills/`](.posit/assistant/ski
 
 You can use a single skill for a focused task, or use the full sequence for a finished report. The report skill incorporates the other three skills and pauses for your decisions about the question, calculations, story, visuals, and final draft.
 
+At present, `quarto-report-generation` is the only included skill with built-in user checkpoints. To make another skill collaborative in the same way, replicate its checkpoint pattern: pause at decisions that affect the question, method, interpretation, or final output; present the relevant context and choices; then continue only after the user has confirmed, revised, or delegated the decision.
+
 ## Customize for your project
 
 Edit a skill’s `SKILL.md` when your project needs a different data source, reporting standard, terminology, or output location. Keep each skill focused on one reusable job, and commit changes alongside the code or data process they govern.
