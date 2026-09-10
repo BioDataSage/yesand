@@ -18,9 +18,7 @@ Use this repository as a template for R data-analysis projects that uses skills.
 | `accessible-visualization` | create a reproducible, accessible `ggplot2` chart | “Use `accessible-visualization` to make an accessible chart of sales by region.” |
 | `quarto-report-generation` | create a concise, accessible HTML report from an analysis | “Use `quarto-report-generation` to turn this analysis into a report for leadership.” |
 
-The skill instructions live in [`.posit/assistant/skills/`](.posit/assistant/skills/). They are version-controlled with the project, so collaborators work from the same conventions.
-
-You can use a single skill for a focused task, or use the full sequence for a finished report. The report skill incorporates the other three skills and pauses for your decisions about the question, calculations, story, visuals, and final draft.
+The skill instructions live in [`.posit/assistant/skills/`](.posit/assistant/skills/). You can use a single skill for a focused task, or use the full sequence for a finished report. The report skill incorporates the other three skills and pauses for your decisions about the question, calculations, story, visuals, and final draft.
 
 At present, `quarto-report-generation` is the only included skill with built-in user checkpoints. To make another skill collaborative in the same way, replicate its checkpoint pattern: pause at decisions that affect the question, method, interpretation, or final output; present the relevant context and choices; then continue only after the user has confirmed, revised, or delegated the decision.
 
